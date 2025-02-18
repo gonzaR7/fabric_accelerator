@@ -6,7 +6,7 @@ targetScope = 'subscription'
 param dprg string= 'rg-fabric-acc-southcentralus'
 
 @description('Microsoft Fabric Resource group location')
-param rglocation string = 'southcentralus'
+param rglocation string = 'South Central US'
 
 @description('Cost Centre tag that will be applied to all resources in this deployment')
 param cost_centre_tag string = 'MCAPS'
@@ -30,7 +30,7 @@ param enable_purview bool = true
 param purviewrg string= 'rg-datagovernance-southcentralus'
 
 @description('Location of Purview resource. This may not be same as the Fabric resource group location')
-param purview_location string= 'southcentralus'
+param purview_location string= 'South Central US'
 
 @description('Resource Name of new or existing Purview Account. Must be globally unique. Specify a resource name if either create_purview=true or enable_purview=true')
 param purview_name string = 'PrototypeDG' // Replace with a Globally unique name
