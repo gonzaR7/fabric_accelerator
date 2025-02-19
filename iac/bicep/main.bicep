@@ -141,13 +141,13 @@ module fabric_capacity './modules/fabric-capacity.bicep' = {
   name: fabric_deployment_name
   scope: fabric_rg
   params:{
-    fabric_name: 'bafabric01'
+    fabric_name: 'protofabric'
     location: fabric_rg.location
     cost_centre_tag: cost_centre_tag
     owner_tag: owner_tag
     sme_tag: sme_tag
     adminUsers: kv_ref.getSecret('fabric-capacity-admin-username')
-    skuName: 'F4' // Default Fabric Capacity SKU F2
+    skuName: 'F2' // Default Fabric Capacity SKU F2
   }
 }
 
